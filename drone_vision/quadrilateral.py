@@ -1,6 +1,6 @@
 import math
 from typing import List
-from point import point
+from drone_vision.point import point
 
 COMPLETE_CIRCUNFERENCE = 2*math.pi
 ONE_GRADE_IN_RADIANS = math.pi/180

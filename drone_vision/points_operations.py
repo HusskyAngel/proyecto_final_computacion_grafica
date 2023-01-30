@@ -1,7 +1,7 @@
 from typing import List, Tuple
 from math import sqrt, pi
 
-from point import point
+from drone_vision.point import point
 
 EPSILON = 0.00001
 ONE_RADIAN_IN_GRADES = 180/pi

@@ -1,8 +1,8 @@
 from typing import List, Tuple
 from math import pi, acos
 
-from point import point
-from points_operations import get_orientation, vector_norm
+from drone_vision.point import point
+from drone_vision.points_operations import get_orientation, vector_norm
 
 EPSILON = 0.00001
 ONE_RADIAN_IN_GRADES = 180/pi

@@ -2,10 +2,10 @@ import copy
 from typing import List, Tuple
 from math import acos, floor, sqrt, pi
 
-from point import point
-from quadrilateral import quadrilateral
-from lines_operations import point_on_line, get_point_end_and_init_paralallel_to_line_on_two_lines, project_point_on_line
-from points_operations import vector_norm
+from drone_vision.point import point
+from drone_vision.quadrilateral import quadrilateral
+from drone_vision.lines_operations import point_on_line, get_point_end_and_init_paralallel_to_line_on_two_lines, project_point_on_line
+from drone_vision.points_operations import vector_norm
 
 EPSILON = 0.00001
 ONE_RADIAN_IN_GRADES = 180/pi

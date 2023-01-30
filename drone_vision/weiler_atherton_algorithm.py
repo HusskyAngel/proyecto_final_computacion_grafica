@@ -1,11 +1,11 @@
 from typing import List, Tuple
 
-from quadrilateral import quadrilateral
-from points_operations import vector_norm
-from point import point
-from point_entering import PointEntering
-from polygon_operations import delete_collinear_segments, point_in_polygon, rotate_polygon, point_in_polygon_perimeter, sort_clockwise_polygon, is_polygon_inside_polygon, delete_repeated_points
-from lines_operations import does_segments_intersect, intersection_point_between_lines, does_segments_overlap, point_on_segment
+from drone_vision.quadrilateral import quadrilateral
+from drone_vision.points_operations import vector_norm
+from drone_vision.point import point
+from drone_vision.point_entering import PointEntering
+from drone_vision.polygon_operations import delete_collinear_segments, point_in_polygon, rotate_polygon, point_in_polygon_perimeter, sort_clockwise_polygon, is_polygon_inside_polygon, delete_repeated_points
+from drone_vision.lines_operations import does_segments_intersect, intersection_point_between_lines, does_segments_overlap, point_on_segment
 
 
 class border_point():

@@ -2,11 +2,11 @@ import copy
 from math import tan
 import math
 from typing import Tuple
-from lines_operations import get_point_inside_line_by_y_coordinate
-from points_operations import vector_norm
+from drone_vision.lines_operations import get_point_inside_line_by_y_coordinate
+from drone_vision.points_operations import vector_norm
 
-from point import point
-from quadrilateral import quadrilateral
+from drone_vision.point import point
+from drone_vision.quadrilateral import quadrilateral
 
 COMPLETE_CIRCUNFERENCE = 2*math.pi
 ONE_GRADE_IN_RADIANS = math.pi/180

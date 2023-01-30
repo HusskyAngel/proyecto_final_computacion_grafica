@@ -3,11 +3,11 @@ from typing import List
 import cv2
 import numpy as np
 
-from camera_projections import get_quadrilateral_projection
-from geometric_operations import project_point_on_line
-from point import point
-from polygon_operations import format_polygon, project_polygon_on_camera_frame
-from weiler_atherton_algorithm import calculate_polygon_intersection
+from drone_vision.camera_projections import get_quadrilateral_projection
+from drone_vision.geometric_operations import project_point_on_line
+from drone_vision.point import point
+from drone_vision.polygon_operations import format_polygon, project_polygon_on_camera_frame
+from drone_vision.weiler_atherton_algorithm import calculate_polygon_intersection
 
 
 def drawInferenceMask(polygons: np.ndarray, height: int, width: int):

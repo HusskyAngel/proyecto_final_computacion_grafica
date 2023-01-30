@@ -1,4 +1,4 @@
-from point import point
+from drone_vision.point import point
 
 
 class PointEntering:

@@ -1,11 +1,11 @@
 import math
 from typing import List, Tuple
 
-from geometric_operations import project_point_on_camera_frame
-from point import point
-from quadrilateral import quadrilateral
-from points_operations import get_orientation
-from lines_operations import point_on_segment, angle_between_segments
+from drone_vision.geometric_operations import project_point_on_camera_frame
+from drone_vision.point import point
+from drone_vision.quadrilateral import quadrilateral
+from drone_vision.points_operations import get_orientation
+from drone_vision.lines_operations import point_on_segment, angle_between_segments
 
 EPSILON = 0.00001
 CLOCKWISE_ORIENTATION = 1
@@ -156,7 +156,7 @@ def sort_clockwise_polygon(polygon: List[point]) -> List[point]:
     sorted_polygon: List[point] = []
 
     for i in range(len(polygon) - 1, -1, -1):
-        sorted_polygon.append(polygon[i])
+        sorted_polygon.apdrone_vision.pend(polygon[i])
 
     return sorted_polygon
 
@@ -194,3 +194,17 @@ def delete_repeated_points(polygons: List[List[point]]) -> List[List[point]]:
         neo_polygons.append(neo_polygon)
 
     return neo_polygons
+
+
+def format_simple_polygon(polygon: List[List[float]]) -> List[point]:
+    """
+    Formats polygons given by format [[x1, y1], [x2, y2], ..., [xn, yn]] to list of points class
+    """
+
+    neo_polygon: List[point] = []
+
+    for p in polygon:
+        neo_p = point(p[0], p[1], 0)
+        neo_polygon.append(neo_p)
+
+    return neo_polygon
